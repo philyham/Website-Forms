@@ -12,6 +12,7 @@
     <div class="container">
         <h1>Complete Your Details By Filling This Form</h1>
         <form autocomplete="on" autofocus class="website-form">
+          <!-- Name, Email and Date of Birth Input Codes -->
           <label for="fname" class="form-label">Full Name</label>
           <br>
           <input type="text" name="fname" id="fname" class="form-input" placeholder="Enter Full Name Here" required>
@@ -24,8 +25,9 @@
           <br>
           <input type="date" name="dob" id="dob" class="form-input">
           <br>
+          <!-- Radio Input Codes to Select Gender-->
           <div class="form-radio">
-            <label for="select">Select Gender</label>
+            <label for="select" class="select-radio">Select Gender</label>
           <br>
           <br>
           <label for="male">Male</label>
@@ -46,8 +48,9 @@
           <input type="radio" id="other" name="gender" value="OTHER">
           </div>
           <br>
+          <!-- Dropdown / Select Option Codes To Select Country-->
           <div class="form-option">
-            <label for="dropdown">Country</label>
+            <label for="dropdown" class="dropdown-country">Country</label>
             <br>
             <select name="country" id="country">
               <option value="select">Select A West African Country</option>
@@ -59,6 +62,7 @@
             </select>
           </div>
          <br>
+         <!-- Password Codes -->
           <label for="password" class="form-label">Password</label>
           <br>
           <input type="password" name="password" id="password" class="form-input" placeholder="Enter Password Here" required>
@@ -67,14 +71,16 @@
           <br>
           <input type="password" name="cpassword" id="cpassword" class="form-input" placeholder="Confirm Your Password Here" required>
           <br>
+          <!-- TextArea Input Codes for Message-->
           <label for="message" class="form-label">Message</label>
           <br>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter A Message Here"></textarea>
           <br>
+          <!-- Checkbox Input Codes to Tick Terms and Conditions Box -->
           <div class="form-checkbox">
-            <input class="input-checkbox" type="checkbox" name="terms_conditions" id="terms_conditions">
+            <input type="checkbox" name="terms_conditions" id="terms_conditions">
             <br>
-            <label for="terms_conditions">
+            <label for="terms_conditions" class="label-checkbox">
             I agree to these
             <a href="#" target="_blank">
             Terms and Conditions
@@ -82,6 +88,7 @@
            </label>
           </div>
           <br>
+          <!-- Submit Button Code -->
           <button type="submit">Submit</button>
         </form>
     </div>

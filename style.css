@@ -9,8 +9,8 @@ body {
     background-image: url("./images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
     padding: 50px 0;
+    height: 100vh;
 }
 
 h1 {
@@ -65,8 +65,9 @@ h1 {
 }
 
 textarea {
+    width: 80%;
     border-radius: 8px;
-    /* padding: 20px; */
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 40px;
     border-radius: 8px;
@@ -76,6 +77,10 @@ textarea {
 /* Radio Styles */
 .form-radio {
     color: #FFFFFF;
+    font-size: 18px;
+}
+
+.select-radio {
     font-size: 20px;
 }
 
@@ -86,6 +91,10 @@ textarea {
 /* Select  Styles */
 .form-option {
     color: #FFFFFF;
+    font-size: 20px;
+}
+
+.dropdown-country {
     font-size: 20px;
 }
 
@@ -106,29 +115,42 @@ textarea {
 /* Checkbox Styles */
 .form-checkbox {
     display: flex;
-    padding: 16px;
-    margin: 32px;
+    padding: 1em;
+    margin: 2em;
     border: 3px solid #ddd;
     background-color: #eee;
-    margin: 10px;
+    /* margin: 10px; */
     /* max-width: 800px; */
 }
 
 #terms_conditions {
-    height: 32px;
-    width: 32px;
+    height: 2em;
+    width: 2em;
     vertical-align: middle;
   }
+
+.label-checkbox {
+    font-size: 20px;
+    margin-left: 10px;
+}
 
  /* Button Styles */
 button {
     background-color: rgba(4, 3, 27, 0.87);
+    border: 1px solid rgba(4, 3, 27, 0.87);
     width: 80%;
     height: 40px;
     border-radius: 10px;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
+    cursor: pointer;
+}
+
+button:hover, 
+button:focus {
+    background-color: rgb(107, 9, 74);
+    border: 1px solid rgb(107, 9, 74);
 }
 
 
@@ -142,8 +164,46 @@ button {
 }
 
 /* Media Queries Styles */
+@media screen and (min-width: 768px) {
+    .form-checkbox {
+        margin: 2em 4em;
+    }
+    .label-checkbox {
+        margin-left: 20px;
+      }
+}
+
 @media screen and (min-width: 1024px) {
-    .container {
-        text-align: start;
+    .website-form {
+        width: 60%;
+        padding: 40px 0;
+    }
+    .form-label {
+        font-size: 24px;
+    }
+    .dropdown-country {
+        font-size: 24px;
+    }
+    .select-radio {
+        font-size: 24px;
+    }
+    textarea {
+        padding: 20px;
+    }
+    button {
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .form-checkbox {
+        margin: 2em 5em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .form-checkbox {
+        margin: 2em 6em;
     }
 }
