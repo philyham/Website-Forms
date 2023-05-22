@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Website Forms</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Complete Your Details By Filling This Form</h1>
+        <form autocomplete="on" autofocus class="website-form">
+          <label for="fname" class="form-label">Full Name</label>
+          <br>
+          <input type="text" name="fname" id="fname" class="form-input" placeholder="Enter Full Name Here" required>
+          <br>
+          <label for="email" class="form-label">Email Address</label>
+          <br>
+          <input type="email" name="email" id="email" class="form-input" placeholder="Enter Email Here" required>
+          <br>
+          <label for="dob" class="form-label">Date of Birth</label>
+          <br>
+          <input type="date" name="dob" id="dob" class="form-input">
+          <br>
+          <div class="form-radio">
+            <label for="select">Select Gender</label>
+          <br>
+          <br>
+          <label for="male">Male</label>
+          <br>
+          <br>
+          <input type="radio" id="male" name="gender" value="MALE">
+          <br>
+          <br>
+          <label for="female">Female</label>
+          <br>
+          <br>
+          <input type="radio" id="female" name="gender" value="FEMALE">
+          <br>
+          <br>
+          <label for="other">Other</label>
+          <br>
+          <br>
+          <input type="radio" id="other" name="gender" value="OTHER">
+          </div>
+          <br>
+          <div class="form-option">
+            <label for="dropdown">Country</label>
+            <br>
+            <select name="country" id="country">
+              <option value="select">Select A West African Country</option>
+              <option value="ghana">Ghana</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="liberia">Liberia</option>
+              <option value="gambia">Gambia</option>
+              <option value="sierra_leone">Sierra Leone</option>
+            </select>
+          </div>
+         <br>
+          <label for="password" class="form-label">Password</label>
+          <br>
+          <input type="password" name="password" id="password" class="form-input" placeholder="Enter Password Here" required>
+          <br>
+          <label for="cpassword" class="form-label">Confirm Password</label>
+          <br>
+          <input type="password" name="cpassword" id="cpassword" class="form-input" placeholder="Confirm Your Password Here" required>
+          <br>
+          <label for="message" class="form-label">Message</label>
+          <br>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter A Message Here"></textarea>
+          <br>
+          <div class="form-checkbox">
+            <input class="input-checkbox" type="checkbox" name="terms_conditions" id="terms_conditions">
+            <br>
+            <label for="terms_conditions">
+            I agree to these
+            <a href="#" target="_blank">
+            Terms and Conditions
+            </a>
+           </label>
+          </div>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
